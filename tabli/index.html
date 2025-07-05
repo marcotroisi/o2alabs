@@ -100,6 +100,46 @@
             .fun-emoji {
                 font-size: 2.5rem;
             }
+            /* 
+             * Mobile optimization for buttons
+             * These styles fix issues with buttons on mobile devices:
+             * - Prevents awkward text wrapping
+             * - Reduces padding to fit better on small screens
+             * - Adjusts font size for better readability
+             * - Ensures proper width and alignment
+             */
+            .hero-cta {
+                display: inline-block;
+                width: auto;
+                max-width: 90%;
+                white-space: normal;
+                padding: 0.75rem 1.5rem !important;
+                font-size: 1rem !important;
+                text-align: center;
+                line-height: 1.4;
+            }
+            /* 
+             * Specific styling for the pricing button with longer text
+             * "Start for just £50/month 💪" needs extra adjustments
+             * to prevent awkward wrapping on mobile screens
+             */
+            .hero-section-cta {
+                font-size: 0.9rem !important;
+                padding: 0.75rem 1.25rem !important;
+            }
+        }
+        
+        /* 
+         * Extra small screens (e.g., small mobile phones)
+         * Further optimizations for very small screens to ensure
+         * buttons remain usable and visually appealing
+         */
+        @media (max-width: 480px) {
+            .hero-section-cta {
+                font-size: 0.85rem !important;
+                padding: 0.7rem 1rem !important;
+                max-width: 85%;
+            }
         }
     </style>
 </head>
@@ -110,7 +150,7 @@
         <nav class="container mx-auto flex justify-between items-center">
             <a href="#" class="logo">Tabli 🍽️</a>
             <div>
-                <a href="#signup" class="fun-button">Let's Go! 🚀</a>
+                <a href="#signup" class="fun-button hero-cta">Let's Go! 🚀</a>
             </div>
         </nav>
     </header>
@@ -125,7 +165,7 @@
             <p class="text-xl md:text-2xl lg:text-3xl mb-12 max-w-4xl mx-auto font-medium">
                 Stop wrestling with complicated systems. Tabli makes reservations as easy as ordering your morning coffee ☕
             </p>
-            <a href="#signup" class="bg-white text-red-600 hover:bg-gray-50 font-bold py-4 px-10 rounded-full shadow-xl text-xl transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+            <a href="#signup" class="bg-white text-red-600 hover:bg-gray-50 font-bold py-4 px-10 rounded-full shadow-xl text-xl transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 hero-cta hero-section-cta">
                 Start for just £50/month 💪
             </a>
         </div>
@@ -232,7 +272,7 @@
                         <span><strong>Cancel</strong> whenever you want</span>
                     </li>
                 </ul>
-                <a href="#signup" class="fun-button text-xl py-4 px-10">
+                <a href="#signup" class="fun-button text-xl py-4 px-10 hero-cta">
                     Let's Do This! 🚀
                 </a>
             </div>
@@ -251,7 +291,7 @@
             <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-medium">
                 Join the smart restaurant owners who stopped stressing about bookings and started focusing on what they love: great food! 🍽️
             </p>
-            <a href="#" class="bg-white text-red-600 hover:bg-gray-50 font-bold py-4 px-12 rounded-full shadow-xl text-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+            <a href="#" class="bg-white text-red-600 hover:bg-gray-50 font-bold py-4 px-12 rounded-full shadow-xl text-2xl transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1 hero-cta">
                 Start Your Free Trial! 🚀
             </a>
             <p class="mt-8 text-lg opacity-90">
