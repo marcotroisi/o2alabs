@@ -148,14 +148,27 @@
             font-weight: 500;
         }
 
-        .copyright {
+        .footer-info {
             position: absolute;
-            bottom: 16px;
+            bottom: 12px;
             left: 50%;
             transform: translateX(-50%);
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .copyright {
             font-size: 12px;
             color: var(--fg-muted);
             opacity: 0.7;
+        }
+
+        .company-info {
+            font-size: 11px;
+            color: var(--fg-muted);
+            opacity: 0.55;
+            margin-top: 4px;
+            letter-spacing: 0.02em;
         }
 
         .line-numbers {
@@ -222,8 +235,9 @@
                 :message
             </a>
             
-            <div class="copyright">
-                © 2026 O2A Labs. All rights reserved.
+            <div class="footer-info">
+                <div class="copyright">© 2026 O2A Labs. All rights reserved.</div>
+                <div class="company-info">Company No. NI734263 &nbsp;·&nbsp; 137 York Road, Belfast, Northern Ireland, United Kingdom, BT15 3GZ</div>
             </div>
         </div>
         
