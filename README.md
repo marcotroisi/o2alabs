@@ -1,6 +1,6 @@
-# Samcop's Website
+# O2A Labs Website
 
-This is a simple GitHub Pages website for Samcop.
+This is a simple GitHub Pages website for O2A Labs, a consultancy specialised in AI, software development, and fractional CTO services.
 
 ## Accessing the Website
 
